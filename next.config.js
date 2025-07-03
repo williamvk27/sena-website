@@ -1,8 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: 'export', 
 
-  basePath: '/sena-website', 
+const isProd = process.env.NODE_ENV === 'production'
+
+const nextConfig = {
+  output: 'export',
+  assetPrefix: isProd ? '/sena-website/' : undefined,
+  basePath: isProd ? '/sena-website/' : undefined,
 
   eslint: {
     ignoreDuringBuilds: true,

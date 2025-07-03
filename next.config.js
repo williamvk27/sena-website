@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
-
-const isProd = process.env.NODE_ENV === 'production'
+const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
   output: 'export',
-  assetPrefix: isProd ? '/sena-website/' : undefined,
-  basePath: isProd ? '/sena-website/' : undefined,
+  assetPrefix: isProd ? '/sena-website' : undefined,
+  basePath: isProd ? '/sena-website' : undefined,
+  trailingSlash: true,
 
   eslint: {
     ignoreDuringBuilds: true,
@@ -16,12 +16,12 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: "https",
-        hostname: "**",
+        protocol: 'https',
+        hostname: '**',
       },
     ],
     unoptimized: true,
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

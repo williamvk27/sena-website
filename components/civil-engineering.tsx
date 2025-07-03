@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Building, HardHat, Ruler, FileText, Users, Shield } from "lucide-react"
 import AnimateOnScroll from "@/components/animations/animate-on-scroll"
 import StaggerChildren from "@/components/animations/stagger-children"
+import Link from "next/link"
 
 export default function CivilEngineering() {
   const services = [
@@ -134,7 +135,7 @@ export default function CivilEngineering() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 rounded-lg font-semibold hover:scale-105 transition-all duration-300">
-                Solicitar Orçamento
+                <Link href="#contato">Solicitar Orçamento</Link>
               </button>
               <button className="border border-gray-600 hover:border-teal-400 text-white hover:text-teal-400 px-8 py-3 rounded-lg font-semibold hover:scale-105 transition-all duration-300">
                 Ver Portfólio

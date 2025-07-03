@@ -53,7 +53,7 @@ export default function Header() {
               <Phone className="w-4 h-4 mr-2" />
               (11) 5026-4182
             </div>
-            <Button>Orçamento Grátis</Button>
+            <Button><Link href="#contato">Orçamento Grátis</Link></Button>
           </div>
 
           {/* Mobile Menu Button */}

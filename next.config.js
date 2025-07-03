@@ -1,5 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export', 
+
+  basePath: '/sena-website', 
+
   eslint: {
     ignoreDuringBuilds: true,
   },

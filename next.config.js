@@ -1,25 +1,9 @@
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === 'production';
-
 const nextConfig = {
   output: 'export',
-  assetPrefix: isProd ? '/sena-website' : undefined,
-  basePath: isProd ? '/sena-website' : undefined,
-  trailingSlash: true,
-
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+  basePath: '/sena-website',
+  assetPrefix: '/sena-website',
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: '**',
-      },
-    ],
     unoptimized: true,
   },
 };

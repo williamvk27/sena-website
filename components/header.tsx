@@ -16,13 +16,11 @@ export default function Header() {
           {/* Logo */}
           <Link href='/' className='flex items-center'>
             <Image
-              src={`${
-                process.env.NEXT_PUBLIC_BASE_PATH || ''
-              }/sena-engenharia-logo.png`}
+              src='/images/sena-engenharia-logo.png'
               alt='Sena Engenharia'
-              width={60}
-              height={60}
-              className='h-12 w-auto hover:scale-105 transition-transform duration-300'
+              width={100}
+              height={100}
+              className='h-28 w-auto hover:scale-105 transition-transform duration-300'
               priority
             />
           </Link>

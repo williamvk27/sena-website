@@ -10,7 +10,7 @@ import React from 'react';
 export default function ClientesPage() {
   const featuredClients = [
     {
-      name: 'Museu de Arte Contemporânea de Campinas william teste br',
+      name: 'Museu de Arte Contemporânea de Campinas',
       sector: 'Museu',
       service: 'Preservação de Acervo',
       period: '2022-2024',
